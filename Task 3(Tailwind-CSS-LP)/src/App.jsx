@@ -5,6 +5,7 @@ import BrandPillars from './components/BrandPillars';
 import Stats from './components/Stats';
 import SecondaryHero from './components/SecondaryHero';
 import Advantages from './components/Advantages';
+import Advantage2 from './components/Advantage2';
 const App = () => {
   return (
     <div className='p-0 m-0 box-border'>
@@ -19,6 +20,8 @@ const App = () => {
       <SecondaryHero />
 
       <Advantages/>
+
+      <Advantage2/>
 
     </div>
   );
