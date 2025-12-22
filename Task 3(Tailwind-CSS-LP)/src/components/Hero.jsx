@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="p-4 rounded- overflow-hidden h-screen">
-      <div className=" bg-[url('./assets/hero-section1.png')] h-full bg-cover bg-center w-ful rounded-2xl overflow-hidden relative">
+      <div className=" bg-[url('./assets/hero-section1.png')] h-full bg-cover bg-center w-full rounded-2xl overflow-hidden relative">
         <div className="p-4 flex flex-col justify-center w-full absolute bottom-12 ">
           <div className="">
             <h1 className="text-9xl font-light ">DESIGN </h1>

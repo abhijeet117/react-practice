@@ -1,6 +1,9 @@
 @import "tailwindcss";
 /* @import 'remixicon/fonts/remixicon.css' */
 
+*{
+  @apply box-border;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
