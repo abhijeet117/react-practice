@@ -6,3 +6,5 @@ const Prefences = ({ icon, iName }) => {
     </div>
   );
 };
+
+export default Prefences
