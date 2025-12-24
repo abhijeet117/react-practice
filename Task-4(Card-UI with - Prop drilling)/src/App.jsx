@@ -1,5 +1,5 @@
 import Btmicon from "./components/Btm-icon";
-
+import Prefences from "./components/prefences";
 const people = [
   {
     id: 1,
@@ -118,15 +118,9 @@ const App = () => {
             <div className=" flex w-full justify-between items-center gap-4 mt-2">
               <div className="flex flex-col">
 
-                <i class="ri-information-line">
-                  {" "}
-                  <span>Photographer</span>
-                </i>
-                
-                <i class="ri-map-pin-line">
-                  {" "}
-                  <span>Indore, India</span>
-                </i>
+                <Prefences icon={<i class="ri-information-line"></i>} iName= {'Photographer'}/>
+                <Prefences icon={<i class="ri-map-pin-line"></i>} iName= {'Indore, India'}/>
+
               </div>
 
               <div className="">
