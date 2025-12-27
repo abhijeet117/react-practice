@@ -1,9 +1,11 @@
-
+import Inputs from "./components/Inputs"
 function App() {
   
 
   return (
-    <div>hello</div>
+    <div>
+      <Inputs />
+    </div>
   )
 }
 
