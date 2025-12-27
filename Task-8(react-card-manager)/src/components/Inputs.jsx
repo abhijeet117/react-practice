@@ -55,7 +55,7 @@ const Inputs = () => {
     </div>
     {users.map((user, idx) => (
         <div className="" key={idx}>
-            <Card />
+            <Card img={user.img} name={user.name} role={user.role} />
             
         </div>
       ))}
