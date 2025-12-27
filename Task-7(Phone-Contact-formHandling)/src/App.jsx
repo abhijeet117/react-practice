@@ -1,5 +1,12 @@
+import { div } from "three/tsl";
+import Contact from "./components/Contact";
+
 function App() {
-  return <></>;
+  return (
+    <div>
+      <Contact />
+    </div>
+  )
 }
 
 export default App; 
