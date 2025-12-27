@@ -10,11 +10,12 @@ const Inputs = () => {
 
   function submitHandle() {
     const newUser = { img, name, role };
-    setusers(...users, newUser);
+    setusers([...users, newUser]);
   }
 
   return (
-    <div className=" border border-red-400 flex flex-col gap-4 items-center w-[50vh]">
+    <div className=" ">
+        <div className=" border border-red-400 flex flex-col gap-4 items-center w-[50vh]">
       <input
         onChange={(e) => {
           setimg(e.target.value);
@@ -45,16 +46,19 @@ const Inputs = () => {
         value={role}
       />
 
-      <button onSubmit={submitHandle} className="border mt-10 rounded">
+      <button onClick={submitHandle} className="border mt-10 rounded">
         Generate
       </button>
 
-      {users.map((user, idx) => (
-        <div key={idx}>
+      
+    
+    </div>
+    {users.map((user, idx) => (
+        <div className="" key={idx}>
             <Card />
+            
         </div>
       ))}
-    
     </div>
   );
 };
