@@ -1,4 +1,3 @@
-import { div } from "three/tsl";
 import Contact from "./components/Contact";
 
 function App() {
