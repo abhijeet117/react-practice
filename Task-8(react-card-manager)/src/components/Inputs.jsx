@@ -11,6 +11,10 @@ const Inputs = () => {
   function submitHandle() {
     const newUser = { img, name, role };
     setusers([...users, newUser]);
+
+    setname("");
+    setimg("");
+    setrole("");
   }
 
   return (
@@ -54,7 +58,7 @@ const Inputs = () => {
     
     </div>
     {users.map((user, idx) => (
-        <div className="" key={idx}>
+        <div className="flex gap 4 flex-wrap" key={idx}>
             <Card img={user.img} name={user.name} role={user.role} />
             
         </div>
