@@ -12,6 +12,10 @@ const Card = (props) => {
             <i class="ri-instagram-line"></i>
             <i class="ri-twitter-fill"></i>
             <i class="ri-pinterest-fill"></i>
+
+            <button className="h-12 w-12 border-2" onClick={()=>{
+              props.deleteHandler(props.idx)
+            }}>remove</button>
         </div>
     </div>
   )
