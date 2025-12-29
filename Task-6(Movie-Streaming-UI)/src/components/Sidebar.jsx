@@ -2,8 +2,8 @@ import Sidelink from "./Sidelink";
 
 const Sidebar = () => {
   return (
-    <div className="p-4 ">
-      <div className="h-screen  w-1/6 border-2 border-purple-400 rounded-xl bg-[#252236]">
+    <div className="p-4 w-[20%] h-[100%]">
+      <div className="h-full border-2 border-purple-400 rounded-xl bg-[#252236]">
         <div className="flex p-3 gap-2 items-center justify-between">
           <div className="flex gap-2">
             <i class="ri-tv-line text-purple-500 text-2xl"></i>
@@ -67,7 +67,7 @@ const Sidebar = () => {
           <hr />
         </div>
 
-        <div className="p-4 flex flex-col gap-6 h-70 justify-between">
+        <div className="p-4 flex flex-col gap-6 h-60 justify-between">
           <Sidelink
             icon={<i class="ri-settings-2-line opacity-100"></i>}
             iName={"Settings"}
