@@ -1,11 +1,52 @@
-import CwCards from "./CwCards"
+import CwCards from "./CwCards";
+import Bgbutton from "./Bgbutton";
+import Firstimg from "../assets/hero-banner.jpg";
 
 const ContinueW = () => {
   return (
-    <div>
-      <CwCards />
-    </div>
-  )
-}
+    <div className="pb-10">
+      <div className="mt-4 flex justify-between p-4">
+        <h1 className="text-xl font-semibold">Continue Watching</h1>
+        <Bgbutton text={"Sell All"} />
+      </div>
 
-export default ContinueW
+      <div className="flex gap-4 overflow-x-auto flex-nowrap px-4 hide-scrollbar">
+        <CwCards
+          img={Firstimg}
+          name="Midnight Mischief Squad"
+          btn="S1, Ep-3"
+          time="30min 55sec"
+        />
+
+        <CwCards
+          img={Firstimg}
+          name="Midnight Mischief Squad"
+          btn="S1, Ep-3"
+          time="30min 55sec"
+        />
+
+        <CwCards
+          img={Firstimg}
+          name="Midnight Mischief Squad"
+          btn="S1, Ep-3"
+          time="30min 55sec"
+        />
+
+        <CwCards
+          img={Firstimg}
+          name="Midnight Mischief Squad"
+          btn="S1, Ep-3"
+          time="30min 55sec"
+        />
+        <CwCards
+          img={Firstimg}
+          name="Midnight Mischief Squad"
+          btn="S1, Ep-3"
+          time="30min 55sec"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ContinueW;

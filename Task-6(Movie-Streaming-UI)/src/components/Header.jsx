@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className=" flex justify-between items-center p-1 " >
+    <div className=" flex justify-between items-center p-1  " >
         <div className="flex gap-4 pr-20 pl-2 py-1 border-2 opacity-70 border-purple-400 rounded-sm justify-center items-center">
             <i class="ri-search-line"></i>
             <h3>Seach for films, directors, or actors...</h3>

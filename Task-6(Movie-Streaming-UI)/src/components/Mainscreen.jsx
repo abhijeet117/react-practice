@@ -4,7 +4,7 @@ import ContinueW from "./ContinueW"
 
 const Mainscreen = () => {
   return (
-    <div className="p-4 w-[80%] h-[100%]">
+    <div className="p-4 w-[100%] h-[100%]">
         <Header />
         <Hero />
         <ContinueW />        
