@@ -2,7 +2,7 @@ import Sidelink from "./Sidelink";
 
 const Sidebar = () => {
   return (
-    <div className="p-4 w-[20%] h-[100%]">
+    <div className="p-4 w-[20%] h-full">
       <div className="h-full border-2 border-purple-400 rounded-xl bg-[#252236]">
         <div className="flex p-3 gap-2 items-center justify-between">
           <div className="flex gap-2">
