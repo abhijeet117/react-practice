@@ -1,7 +1,11 @@
+import Sidebar from "./components/Sidebar"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Sidebar />
+    </div>
   )
 }
 
-export default App
+export default App  
