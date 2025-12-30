@@ -1,6 +1,6 @@
 import Bgbutton from "./Bgbutton";
 
-const CwCards = ({ img, name, btn, time }) => {
+const CwCards = ({ img, name, btn, time, hr }) => {
   return (
     <div  className="min-w-[320px] h-[210px] bg-cover bg-center rounded-xl border flex flex-col justify-end "
         style={{ backgroundImage: `url(${img})` }}
@@ -13,7 +13,7 @@ const CwCards = ({ img, name, btn, time }) => {
         </div>
 
         <div className="h-2 mt-2">
-          <hr />
+          {hr}
         </div>
       </div>
     </div>

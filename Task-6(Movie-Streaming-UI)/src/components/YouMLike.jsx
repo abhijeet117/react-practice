@@ -1,6 +1,12 @@
 import CwCards from "./CwCards";
 import Bgbutton from "./Bgbutton";
-import Firstimg from "../assets/hero-banner.jpg";
+import First from "../assets/c-1.avif"
+import Second from "../assets/c-2.avif"
+import Third from "../assets/c-3.avif"
+import Fourth from "../assets/c-4.avif"
+import Fifth from "../assets/c-5.avif"
+
+
 
 const YouMLike = () => {
 return (
@@ -12,37 +18,27 @@ return (
 
       <div className="flex gap-4 overflow-x-auto flex-nowrap px-4 hide-scrollbar">
         <CwCards
-          img={Firstimg}
-          name="Midnight Mischief Squad"
-          btn="S1, Ep-3"
-          time="30min 55sec"
+          img={First}
+          
         />
 
         <CwCards
-          img={Firstimg}
-          name="Midnight Mischief Squad"
-          btn="S1, Ep-3"
-          time="30min 55sec"
+          img={Second}
+          
         />
 
         <CwCards
-          img={Firstimg}
-          name="Midnight Mischief Squad"
-          btn="S1, Ep-3"
-          time="30min 55sec"
+          img={Third}
+          
         />
 
         <CwCards
-          img={Firstimg}
-          name="Midnight Mischief Squad"
-          btn="S1, Ep-3"
-          time="30min 55sec"
+          img={Fourth}
+          
         />
         <CwCards
-          img={Firstimg}
-          name="Midnight Mischief Squad"
-          btn="S1, Ep-3"
-          time="30min 55sec"
+          img={Fifth}
+          
         />
       </div>
     </div>
