@@ -7,18 +7,23 @@ const Card = (props) => {
 
         <h3>{props.role}</h3>
 
-        <div className="flex gap-2">
-            <i class="ri-facebook-fill"></i>
-            <i class="ri-instagram-line"></i>
-            <i class="ri-twitter-fill"></i>
-            <i class="ri-pinterest-fill"></i>
+        <div className="flex items-center gap-3">
+  <i className="ri-facebook-fill text-xl cursor-pointer"></i>
+  <i className="ri-instagram-line text-xl cursor-pointer"></i>
+  <i className="ri-twitter-fill text-xl cursor-pointer"></i>
+  <i className="ri-pinterest-fill text-xl cursor-pointer"></i>
 
-            <button className="h-12 w-12 border-2" onClick={()=>{
-              props.deleteHandler(props.idx)
-            }}>remove</button>
-        </div>
+  <button
+    className="ml-2 px-3 py-1 border-2 rounded-md text-sm 
+               hover:bg-red-500 hover:text-white transition"
+    onClick={() => props.deleteHandler(props.idx)}
+  >
+    Remove
+  </button>
+</div>
+
     </div>
   )
 }
-
+ 
 export default Card

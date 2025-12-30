@@ -6,11 +6,18 @@ const Inputs = () => {
   const [name, setname] = useState("");
   const [role, setrole] = useState("");
 
-  const [users, setusers] = useState([]);
+  const localData = JSON.parse(localStorage.getItem("all-users")) || [];
+
+  const [users, setusers] = useState(localData);
 
   function submitHandle() {
     const newUser = { img, name, role };
-    setusers([...users, newUser]);
+
+    const updatedUsers = [...users, newUser];
+
+    setusers(updatedUsers);
+
+    localStorage.setItem("all-users", JSON.stringify(updatedUsers));
 
     setname("");
     setimg("");
@@ -21,6 +28,7 @@ const Inputs = () => {
     const copyElement = [...users];
     copyElement.splice(idx, 1);
     setusers(copyElement);
+    localStorage.setItem("all-users", JSON.stringify(copyElement));
   }
 
   return (
@@ -61,7 +69,7 @@ const Inputs = () => {
         </button>
       </div>
       {users.map((user, idx) => (
-        <div className="flex gap 4 flex-wrap" key={idx}>
+        <div className="flex gap-4 flex-wrap" key={idx}>
           <Card
             img={user.img}
             name={user.name}
