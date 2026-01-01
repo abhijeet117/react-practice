@@ -1,19 +1,23 @@
-const Card = (props, key) => {
-  let cl1 = Math.floor(Math.random() * 256);
-  let cl2 = Math.floor(Math.random() * 256);
-  let cl3 = Math.floor(Math.random() * 256);
+import { useState } from "react"
+
+
+
+const Card = () => {
+  /* const [mood, setMood] = useState("")
+  const [quote, setQuote] = useState(second) */
 
   return (
-    <div className="flex flex-row">
-      <div
-        key={key}
-        style={{ backgroundColor: `rgb(${cl1}, ${cl2}, ${cl3})` }}
-        className=" mt-2 h-40 w-40 border"
-      >
-        <h1>{props.elem.author}</h1>
+    <div className="border h-60 w-[90%] flex flex-col items-center justify-center">
+      <h1>sssssssssssssssss</h1>
+      <div className="flex gap-2">
+        <h3>happiness</h3>
+        <h3>life</h3>
+        <h3>motivational</h3>
+        <h3>wisdom</h3>
       </div>
+      <button>Generate</button>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
