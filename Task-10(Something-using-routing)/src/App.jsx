@@ -10,11 +10,15 @@ import Women from "./pages/Women";
 import Notfound from "./pages/Notfound";
 import Courses from "./pages/Courses";
 import CourseDetails from "./pages/CourseDetails";
+import Buttons from "./components/Buttons";
+
 
 function App() {
   return (
     <>
       <Navbar />
+
+      <Buttons />
 
       <Routes>
         <Route path="/" element={<Home />} />
