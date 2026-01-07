@@ -20,6 +20,8 @@ const Navbar = (props) => {
 
             <button className="border">Submit</button>
         </form>
+
+        
     </div>
   )
 }
