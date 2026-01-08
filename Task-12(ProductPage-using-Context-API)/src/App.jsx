@@ -1,31 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import ProductData from "./pages/ProductData";
 
 const App = () => {
-  const [RealData, setRealData] = useState([]);
-
-  async function getData() {
-    const productData = await axios.get("https://fakestoreapi.com/products");
-    setRealData(productData.data);
-    console.log(RealData);
-  }
+ 
 
   return (
-    <div>
-      <button onClick={getData}>Get Data</button>
-
-      <div className="webpage">
-        {RealData.map(function(elem, idx) {
-        return <a className="returning-data" href="">
-          <div className="elements">
-            <img src={elem.image}/>
-            <h2>{elem.title}</h2>
-
-          </div>
-        </a>
-      })}
-      </div>
-    </div>
+   <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/Product" element={<Product/>}/>
+    <Route path="/ProductData" element={<ProductData/>}/>
+   </Routes>
   );
 };
 
