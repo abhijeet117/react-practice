@@ -13,4 +13,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a{
+    text-decoration: none;
+}
 
+.webpage{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.elements{
+  background-color: #464343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.elements h2{
+  font-size: 0.6rem;
+  margin-left: 20px;
+  margin-right: 10px;
+  
+  
+}
+.elements img{
+  height: 120px;
+  width: 120px;
+}
+.returning-data{
+  display: flex;
+}
