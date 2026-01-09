@@ -1,5 +1,3 @@
-
-
 const ProductData = () => {
   return (
     <div>ProductData</div>
