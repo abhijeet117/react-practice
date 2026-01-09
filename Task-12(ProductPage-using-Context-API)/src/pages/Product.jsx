@@ -4,18 +4,24 @@ import {Link} from 'react-router-dom'
 
 const Product = () => {
   const Pdata = useContext(productdatacontext);
-  return (
-    <div className="webpage">
-      {Pdata.map(function (elem, idx) {
+  let renderdata = ''
+
+  if(Pdata.length > 0) {
+    renderdata = Pdata.map(function (elem, idx) {
         return (
-          <Link key={idx} className="returning-data" to={'/product/${elem.id}'}>
+          <Link key={idx} className="returning-data" to={`/product/${elem.id}`}>
             <div className="elements">
               <img src={elem.image} />
               <h2>{elem.title}</h2>
             </div>
           </Link>
         );
-      })}
+      })
+  }
+
+  return (
+    <div className="webpage">
+      {renderdata}
     </div>
   );
 };
